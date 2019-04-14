@@ -1,0 +1,46 @@
+Apr 14 14:29:29 localhost audit[3452]: USER_ACCT pid=3452 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:accounting grantors=pam_unix,pam_localuser acct="shahedkamal" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 14 14:29:29 localhost sudo[3452]: shahedkamal : TTY=pts/0 ; PWD=/etc ; USER=root ; COMMAND=/usr/bin/systemctl restart rsyslog.service
+Apr 14 14:29:29 localhost audit[3452]: USER_CMD pid=3452 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='cwd="/etc" cmd=73797374656D63746C207265737461727420727379736C6F672E73657276696365 terminal=pts/0 res=success'
+Apr 14 14:29:29 localhost audit[3452]: CRED_REFR pid=3452 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_env,pam_fprintd acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 14 14:29:29 localhost sudo[3452]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Apr 14 14:29:29 localhost audit[3452]: USER_START pid=3452 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_open grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 14 14:29:29 localhost systemd[1]: Stopping System Logging Service...
+Apr 14 14:29:30 localhost rsyslogd[712]: [origin software="rsyslogd" swVersion="8.39.0" x-pid="712" x-info="http://www.rsyslog.com"] exiting on signal 15.
+Apr 14 14:29:30 localhost systemd[1]: Stopped System Logging Service.
+Apr 14 14:29:30 localhost audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=rsyslog comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 14 14:29:30 localhost audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=rsyslog comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 14 14:29:30 localhost systemd[1]: Starting System Logging Service...
+Apr 14 14:29:30 localhost systemd[1]: Started System Logging Service.
+Apr 14 14:29:30 localhost audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=rsyslog comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 14 14:29:30 localhost sudo[3452]: pam_unix(sudo:session): session closed for user root
+Apr 14 14:29:30 localhost rsyslogd[3456]: unknown priority name "" [v8.39.0]
+Apr 14 14:29:30 localhost audit[3452]: USER_END pid=3452 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_close grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 14 14:29:30 localhost rsyslogd[3456]: [origin software="rsyslogd" swVersion="8.39.0" x-pid="3456" x-info="http://www.rsyslog.com"] start
+Apr 14 14:29:30 localhost audit[3452]: CRED_DISP pid=3452 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_env,pam_fprintd acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 14 14:31:47 localhost dhclient[2122]: DHCPREQUEST on ens33 to 192.168.79.254 port 67 (xid=0x7c7ef725)
+Apr 14 14:31:47 localhost dhclient[2122]: DHCPACK from 192.168.79.254 (xid=0x7c7ef725)
+Apr 14 14:31:47 localhost NetworkManager[838]: <info>  [1555277507.2471] dhcp4 (ens33):   address 192.168.79.129
+Apr 14 14:31:47 localhost NetworkManager[838]: <info>  [1555277507.2487] dhcp4 (ens33):   plen 24 (255.255.255.0)
+Apr 14 14:31:47 localhost NetworkManager[838]: <info>  [1555277507.2488] dhcp4 (ens33):   gateway 192.168.79.2
+Apr 14 14:31:47 localhost NetworkManager[838]: <info>  [1555277507.2490] dhcp4 (ens33):   lease time 1800
+Apr 14 14:31:47 localhost NetworkManager[838]: <info>  [1555277507.2491] dhcp4 (ens33):   nameserver '192.168.79.2'
+Apr 14 14:31:47 localhost NetworkManager[838]: <info>  [1555277507.2493] dhcp4 (ens33):   domain name 'localdomain'
+Apr 14 14:31:47 localhost NetworkManager[838]: <info>  [1555277507.2495] dhcp4 (ens33): state changed bound -> bound
+Apr 14 14:31:47 localhost dbus-daemon[714]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.16' (uid=0 pid=838 comm="/usr/sbin/NetworkManager --no-daemon " label="system_u:system_r:NetworkManager_t:s0")
+Apr 14 14:31:47 localhost dhclient[2122]: bound to 192.168.79.129 -- renewal in 745 seconds.
+Apr 14 14:31:47 localhost systemd[1]: Starting Network Manager Script Dispatcher Service...
+Apr 14 14:31:47 localhost dbus-daemon[714]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Apr 14 14:31:47 localhost audit[1]: SERVICE_START pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 14 14:31:47 localhost systemd[1]: Started Network Manager Script Dispatcher Service.
+Apr 14 14:31:47 localhost nm-dispatcher[3498]: req:1 'dhcp4-change' [ens33]: new request (3 scripts)
+Apr 14 14:31:47 localhost nm-dispatcher[3498]: req:1 'dhcp4-change' [ens33]: start running ordered scripts...
+Apr 14 14:31:57 localhost audit[1]: SERVICE_STOP pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=NetworkManager-dispatcher comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+Apr 14 14:32:59 localhost audit[3511]: USER_ACCT pid=3511 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:accounting grantors=pam_unix,pam_localuser acct="shahedkamal" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 14 14:32:59 localhost sudo[3511]: shahedkamal : TTY=pts/0 ; PWD=/var/log ; USER=root ; COMMAND=/usr/bin/cp all-info.log /home/shahedkamal/CIT173_Lab10
+Apr 14 14:32:59 localhost audit[3511]: USER_CMD pid=3511 uid=1000 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='cwd="/var/log" cmd=637020616C6C2D696E666F2E6C6F67202F686F6D652F7368616865646B616D616C2F4349543137335F4C61623130 terminal=pts/0 res=success'
+Apr 14 14:32:59 localhost audit[3511]: CRED_REFR pid=3511 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_env,pam_fprintd acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 14 14:32:59 localhost sudo[3511]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Apr 14 14:32:59 localhost audit[3511]: USER_START pid=3511 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_open grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 14 14:32:59 localhost sudo[3511]: pam_unix(sudo:session): session closed for user root
+Apr 14 14:32:59 localhost audit[3511]: USER_END pid=3511 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:session_close grantors=pam_keyinit,pam_limits,pam_keyinit,pam_limits,pam_systemd,pam_unix acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'
+Apr 14 14:32:59 localhost audit[3511]: CRED_DISP pid=3511 uid=0 auid=1000 ses=3 subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 msg='op=PAM:setcred grantors=pam_env,pam_fprintd acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=/dev/pts/0 res=success'

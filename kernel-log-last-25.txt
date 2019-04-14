@@ -1,0 +1,25 @@
+[   17.854176] kauditd_printk_skb: 10 callbacks suppressed
+[   17.854179] audit: type=1130 audit(1554861377.982:67): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=lvm2-pvscan@8:2 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   18.173203] audit: type=1130 audit(1554861378.301:68): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-udev-settle comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   18.367942] audit: type=1130 audit(1554861378.496:69): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=dmraid-activation comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   18.368122] audit: type=1131 audit(1554861378.496:70): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=dmraid-activation comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   18.530817] audit: type=1130 audit(1554861378.659:71): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-fsck@dev-disk-by\x2duuid-8e6ceced\x2dae0d\x2d4cd8\x2d97cd\x2dd8851bdc5ae4 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   18.584141] EXT4-fs (sda1): mounted filesystem with ordered data mode. Opts: (null)
+[   18.730426] audit: type=1130 audit(1554861378.859:72): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=dracut-shutdown comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   18.780801] audit: type=1130 audit(1554861378.909:73): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=plymouth-read-write comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   18.781341] audit: type=1131 audit(1554861378.910:74): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=plymouth-read-write comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   18.858054] audit: type=1130 audit(1554861378.986:75): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=nfs-config comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   18.858885] audit: type=1131 audit(1554861378.987:76): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=nfs-config comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[   19.462031] RPC: Registered named UNIX socket transport module.
+[   19.462032] RPC: Registered udp transport module.
+[   19.462033] RPC: Registered tcp transport module.
+[   19.462034] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[   22.386419] NET: Registered protocol family 40
+[   36.753152] IPv6: ADDRCONF(NETDEV_UP): ens33: link is not ready
+[   36.779270] e1000: ens33 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: None
+[   36.794122] IPv6: ADDRCONF(NETDEV_UP): ens33: link is not ready
+[   36.794148] IPv6: ADDRCONF(NETDEV_CHANGE): ens33: link becomes ready
+[   62.697071] [drm:vmw_stdu_crtc_page_flip [vmwgfx]] *ERROR* Page flip error -16.
+[   83.300666] sched: RT throttling activated
+[   84.373555] fuse init (API version 7.27)
+[   99.983913] [drm:vmw_stdu_crtc_page_flip [vmwgfx]] *ERROR* Page flip error -16.
